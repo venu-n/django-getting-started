@@ -4,7 +4,7 @@
 2) Create a virtual environment (https://peps.python.org/pep-0405/) and activate the same
 3) Install Django within the virtual environment
 4) On the command prompt run, 
-  4.1) "django-admin startproject mysite" to create a project
+  4.1) "django-admin startproject mysite && cd mysite" to create a project
   4.2) "python manage.py runserver" to run the django webserver
 5) On your browser, visit "http://127.0.0.1:8000/" to access the site
 6) On command prompt run,
@@ -23,9 +23,10 @@
         urlpatterns = [
             path('polls/', include('polls.urls')),
             path('admin/', admin.site.urls), ]
-10) On command prompt run, "python manage.py runserver" to run the django webserver
-11) On your browser, visit "http://127.0.0.1:8000/" to access the site
-12) If you get an error page, check that you’re going to http://localhost:8000/polls/ and not http://localhost:8000/
+10) In an editor, open "mysite/settings.py" and add "polls.apps.PollsConfig" to "INSTALLED_APPS"
+11) On command prompt run, "python manage.py runserver" to run the django webserver
+12) On your browser, visit "http://127.0.0.1:8000/" to access the site
+13) If you get an error page, check that you’re going to http://localhost:8000/polls/ and not http://localhost:8000/
 
 HAPPY LEARNING!
 
