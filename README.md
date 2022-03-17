@@ -1,6 +1,6 @@
 # django-getting-started
 
-1) Downloat and install python 3 from https://www.python.org/
+1) Download and install python 3 from https://www.python.org/
 2) Create a virtual environment (https://peps.python.org/pep-0405/) and activate the same
 3) Install Django within the virtual environment
 4) On the command prompt run, 
